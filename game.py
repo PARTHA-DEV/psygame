@@ -115,6 +115,7 @@ class Bullet(pygame.sprite.Sprite):
             self.kill()
 
 background = pygame.image.load("resources/images/background1.png").convert()
+background = pygame.transform.scale(background, (800, 600))
 background_rect = background.get_rect()
 player_img = pygame.image.load("resources/images/om.png").convert()
 meteor_img = pygame.image.load("resources/images/leaf.png").convert()
